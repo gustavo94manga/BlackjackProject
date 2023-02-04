@@ -30,13 +30,13 @@ public class Card {
 		this.suit = suit;
 	}
 	
-//	public void getValue() {
-//		return value;
-//	}
+	public int getValue() {
+		return rank.getValue();
+	}
 
 	@Override
 	public String toString() {
-		return "Card [rank=" + rank + ", suit=" + suit + "]";
+		return "a " + rank + " of " + suit ;
 	}
 
 	@Override

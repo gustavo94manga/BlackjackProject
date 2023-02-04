@@ -8,21 +8,23 @@ public enum Rank {
 	
 	Rank(int Rank, String name) {
 		this.value = Rank;
-		cardName = name;
+		this.cardName = name;
 	}
 	
 	public int getValue() {
 		return value;
 	}
+	
+	
+	public String getCardName() {
+		return cardName;
+	}
+
+
 	@Override
 	public String toString() {
-		return cardName + " " + value;
+		return cardName;
 	}
 	
-//	@Override
-//	public String toString() {
-////		return String.valueOf(value);
-//		return "" + value;
-//	}
 	
 }
