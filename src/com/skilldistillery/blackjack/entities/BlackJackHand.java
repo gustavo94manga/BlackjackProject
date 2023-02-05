@@ -7,11 +7,6 @@ public class BlackJackHand extends Hand{
 	@Override
 	public int getHandValue() {
 		int handValue = 0;
-		//     7 clubs 
-		//     2 spades
-		//     total = 7
-		//     total + 2 = 9
-		//     
 		for (Card card : cards) {
 			handValue += card.getValue();
 		}
@@ -20,12 +15,12 @@ public class BlackJackHand extends Hand{
 	
 	
 	public boolean isBlackJack() {
-		return false;
+		return true;
 		
 	}
 	
 	public boolean isBust() {
-		return false;
+		return true;
 		
 	}
 

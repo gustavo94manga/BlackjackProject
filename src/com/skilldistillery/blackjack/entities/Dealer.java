@@ -20,8 +20,17 @@ public class Dealer extends Player{
 		}
 	}
 	
-	public void showOneCard() {
-		System.out.println("Dealer's hand has: " + blackJackHand.getCards().get(1));
-		System.out.println("Dealer's total hand value: " + blackJackHand.getCards().get(1).getValue());
+	public void showFirstCard() {
+		System.out.println(blackJackHand.getCards().get(0));
+			
+//		System.out.println("Dealer's hand has: " + blackJackHand.getCards().get(1));
+//		System.out.println("Dealer's total hand value: " + blackJackHand.getCards().get(1).getValue());
 	}
+	public void dealersNextCard() {
+		for (int i = 1; i < 52; i ++) {
+			
+		}
+	}
+	
+
 }
