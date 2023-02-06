@@ -18,26 +18,23 @@ public class Deck {
 			}
 		}
 	}
-	
+
 	public Card dealCard() {
 		return deck.remove(0);
-		
+
 	}
 
 	public int checkDeckSize() {
 		return deck.size();
 
 	}
-	
+
 	public void shuffle() {
 		Collections.shuffle(deck);
 	}
-	
 
 	public List<Card> getDeck() {
 		return deck;
 	}
-
-	
 
 }

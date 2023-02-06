@@ -5,10 +5,10 @@ import java.util.Objects;
 public class Card {
 	private Rank rank;
 	private Suit suit;
-	
-	
-	public Card() {}
-	
+
+	public Card() {
+	}
+
 	public Card(Rank rk, Suit st) {
 		suit = st;
 		rank = rk;
@@ -29,14 +29,14 @@ public class Card {
 	public void setSuit(Suit suit) {
 		this.suit = suit;
 	}
-	
+
 	public int getValue() {
 		return rank.getValue();
 	}
 
 	@Override
 	public String toString() {
-		return "a " + rank + " of " + suit ;
+		return "a " + rank + " of " + suit;
 	}
 
 	@Override
@@ -55,6 +55,5 @@ public class Card {
 		Card other = (Card) obj;
 		return rank == other.rank && suit == other.suit;
 	}
-	
-	
+
 }

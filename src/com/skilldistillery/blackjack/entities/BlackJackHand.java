@@ -1,9 +1,7 @@
 package com.skilldistillery.blackjack.entities;
 
-public class BlackJackHand extends Hand{
-	
-	
-	
+public class BlackJackHand extends Hand {
+
 	@Override
 	public int getHandValue() {
 		int handValue = 0;
@@ -12,24 +10,15 @@ public class BlackJackHand extends Hand{
 		}
 		return handValue;
 	}
-	
-	
+
 	public boolean isBlackJack() {
 		return true;
-		
+
 	}
-	
+
 	public boolean isBust() {
 		return true;
-		
+
 	}
 
-	
-
-
-
-
-	
-	
-	
 }
